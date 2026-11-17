@@ -1,0 +1,26 @@
+:root {
+  --page-bg: #f2f3f5;
+  --text-color: #20252c;
+  --primary: #245bb2;
+  --primary-hover: #1b478b;
+  --border: #a0a7b2;
+  --focus: #e49100;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page-bg); color: var(--text-color); font: 20px/1.5 Arial, sans-serif; }
+.jspsych-display-element { font: 20px/1.5 Arial, sans-serif; }
+h1 { font-size: 30px; line-height: 1.25; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: default; opacity: .5; }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 4px solid var(--focus); outline-offset: 3px; }
+.next, .primary-button, #download-results, .study-continue {
+  border: 0; border-radius: 8px; padding: 12px 24px; margin: 18px 6px;
+  background: var(--primary); color: white;
+}
+.next:hover:not(:disabled), .primary-button:hover:not(:disabled), #download-results:hover, .study-continue:hover { background: var(--primary-hover); }
+.study-continue { display: block; margin: 20px auto; }
+.launcher { max-width: 800px; margin: 40px auto; padding: 24px; }
+.launcher label { display: block; margin-top: 20px; font-weight: bold; }
+.launcher input, .launcher select { display: block; width: 100%; margin-top: 8px; padding: 10px; border: 1px solid var(--border); border-radius: 6px; background: white; color: inherit; }
+.error { color: #9c2525; }
